@@ -87,5 +87,5 @@ def sliding_window(a,ws,ss = None,flatten = True):
     firstdim = (np.product(newshape[:-meat]),) if ws.shape else ()
     dim = firstdim + (newshape[-meat:])
     # remove any dimensions with size 1
-    #dim = filter(lambda i : i != 1,dim)
+    #dim = filter(lambda i : i != 1,dim) #sytan modified here
     return strided.reshape(dim)
